@@ -1,0 +1,1389 @@
+[
+    {
+        "id": "69b4362cbb4199e5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "958b9092064ad72a",
+        "type": "group",
+        "z": "69b4362cbb4199e5",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b6a09d0ec15df7b9"
+        ],
+        "x": 714,
+        "y": 179,
+        "w": 152,
+        "h": 82
+    },
+    {
+        "id": "0eebfe965b7f3ee7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7cfca5b9514eb92f",
+        "type": "mqtt-broker",
+        "name": "192.168.10.43",
+        "broker": "192.168.10.43",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "debd23b53860a00c",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e50e21c96dc7506f",
+        "type": "ui_group",
+        "name": "Makineler",
+        "tab": "debd23b53860a00c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "70f026c77b03352c",
+        "type": "ui_tab",
+        "name": "Makine2",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e6b3f62d1ed52f9d",
+        "type": "ui_group",
+        "name": "Makine2",
+        "tab": "70f026c77b03352c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d68bd47e86903ab7",
+        "type": "ui_tab",
+        "name": "Makine3",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bf3b55c4aabc431c",
+        "type": "ui_group",
+        "name": "Makine3",
+        "tab": "d68bd47e86903ab7",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "86a9468e958dbf0c",
+        "type": "ui_tab",
+        "name": "Makine1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f64520c027420f90",
+        "type": "ui_group",
+        "name": "Makine1",
+        "tab": "86a9468e958dbf0c",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db47ddeed7a78f06",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 1",
+        "func": "let data = msg.payload;\n\n// Noise değerini ayıkla\nmsg.payload = data.Noise;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "b6a09d0ec15df7b9"
+            ]
+        ]
+    },
+    {
+        "id": "857dba02b39c8a7b",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 2,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "581f9fdc29a5c891",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 3,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 800,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "db64cd09249fd72d",
+        "type": "mqtt in",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7cfca5b9514eb92f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 280,
+        "wires": [
+            [
+                "db47ddeed7a78f06",
+                "17c26670bc5e97cc",
+                "aa10fec51982abd8"
+            ]
+        ]
+    },
+    {
+        "id": "17c26670bc5e97cc",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 2",
+        "func": "\nlet data = msg.payload;\n\n// Tem1 değerini ayıkla\nmsg.payload = data.Tem1;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "857dba02b39c8a7b"
+            ]
+        ]
+    },
+    {
+        "id": "aa10fec51982abd8",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 3",
+        "func": "\nlet data = msg.payload;\n\n// Humidity (nem) değerini ayıkla\nmsg.payload = data.Hum;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 380,
+        "wires": [
+            [
+                "581f9fdc29a5c891"
+            ]
+        ]
+    },
+    {
+        "id": "dcaca3e4b264bcde",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e50e21c96dc7506f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Makine1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Makine1\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 540,
+        "wires": [
+            [
+                "99eef86db86958aa"
+            ]
+        ]
+    },
+    {
+        "id": "99eef86db86958aa",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 680,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "873127c486bdfd5e",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e50e21c96dc7506f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Makine2",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Makine2\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 600,
+        "wires": [
+            [
+                "85069de2e5fc5e5f"
+            ]
+        ]
+    },
+    {
+        "id": "85069de2e5fc5e5f",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 680,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "16cae250c181745c",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e6b3f62d1ed52f9d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Noise",
+        "label": "Herz",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 910,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1c4eb0e5a595954f",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e50e21c96dc7506f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Makine3",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Makine3\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "406ae6b887ed29a3"
+            ]
+        ]
+    },
+    {
+        "id": "406ae6b887ed29a3",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 680,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fb1b1bb705120c3",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "bf3b55c4aabc431c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1220,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6eca00565b9822b5",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e6b3f62d1ed52f9d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1070,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "201792d08f72bd04",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e6b3f62d1ed52f9d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1220,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2fab57b5fd5a1622",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "bf3b55c4aabc431c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Noise",
+        "label": "Herz",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 910,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "7d49768dc33a4c09",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "bf3b55c4aabc431c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Celcius",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1070,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "dff95ea8272aea51",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e7ca2100408c64e",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2b5a05c5815f039",
+        "type": "ui_ui_control",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "events": "all",
+        "x": 320,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b6a09d0ec15df7b9",
+        "type": "ui_gauge",
+        "z": "69b4362cbb4199e5",
+        "g": "958b9092064ad72a",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 1,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Noise",
+        "label": "Hz",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 790,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3f439de569ed78ec",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "bf3b55c4aabc431c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Home\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "a2b5a05c5815f039"
+            ]
+        ]
+    },
+    {
+        "id": "a3a16280647aaa86",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "e6b3f62d1ed52f9d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Home\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 600,
+        "wires": [
+            [
+                "5e7ca2100408c64e"
+            ]
+        ]
+    },
+    {
+        "id": "9864df715351239a",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\": \"Home\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 540,
+        "wires": [
+            [
+                "dff95ea8272aea51"
+            ]
+        ]
+    },
+    {
+        "id": "3f5f910f0eb6d829",
+        "type": "stopwatch",
+        "z": "69b4362cbb4199e5",
+        "name": "Working Time",
+        "x": 640,
+        "y": 740,
+        "wires": [
+            [
+                "6474d9c668fc8d79",
+                "b823246a51796c47"
+            ]
+        ]
+    },
+    {
+        "id": "6474d9c668fc8d79",
+        "type": "ui_text",
+        "z": "69b4362cbb4199e5",
+        "group": "f64520c027420f90",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Working Time",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "21",
+        "color": "#e10e0e",
+        "x": 1080,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "ce99ab267bc42325",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "start",
+        "topicType": "str",
+        "x": 190,
+        "y": 740,
+        "wires": [
+            [
+                "3f5f910f0eb6d829",
+                "d9a3e6a76c5f789f",
+                "21f93787c71cff77"
+            ]
+        ]
+    },
+    {
+        "id": "3d1222b1c7492175",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "stop",
+        "topicType": "str",
+        "x": 190,
+        "y": 820,
+        "wires": [
+            [
+                "3f5f910f0eb6d829",
+                "392e915bec38ed89",
+                "8ee109b9d189b618"
+            ]
+        ]
+    },
+    {
+        "id": "91482d982f4609ed",
+        "type": "ui_button",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "group": "f64520c027420f90",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "reset",
+        "topicType": "str",
+        "x": 490,
+        "y": 1080,
+        "wires": [
+            [
+                "3f5f910f0eb6d829",
+                "714f31ebe76c993f",
+                "4e4e3198789ce952",
+                "01bde063fde13aae",
+                "b823246a51796c47",
+                "0ace050dadde86e6"
+            ]
+        ]
+    },
+    {
+        "id": "4e4e3198789ce952",
+        "type": "stopwatch",
+        "z": "69b4362cbb4199e5",
+        "name": "Stop Time",
+        "x": 910,
+        "y": 920,
+        "wires": [
+            [
+                "7db0e2f994648dff",
+                "0ace050dadde86e6"
+            ]
+        ]
+    },
+    {
+        "id": "392e915bec38ed89",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "start",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 860,
+        "wires": [
+            [
+                "4e4e3198789ce952"
+            ]
+        ]
+    },
+    {
+        "id": "7db0e2f994648dff",
+        "type": "ui_text",
+        "z": "69b4362cbb4199e5",
+        "group": "f64520c027420f90",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stop Time",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": true,
+        "font": "Arial,Arial,Helvetica,sans-serif",
+        "fontSize": "20",
+        "color": "#43c5df",
+        "x": 1090,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "714f31ebe76c993f",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 1120,
+        "wires": [
+            [
+                "4e4e3198789ce952"
+            ]
+        ]
+    },
+    {
+        "id": "d9a3e6a76c5f789f",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 800,
+        "wires": [
+            [
+                "4e4e3198789ce952"
+            ]
+        ]
+    },
+    {
+        "id": "01bde063fde13aae",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "stop",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 920,
+        "wires": [
+            [
+                "3f5f910f0eb6d829"
+            ]
+        ]
+    },
+    {
+        "id": "21f93787c71cff77",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "resetleyici",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 1180,
+        "wires": [
+            [
+                "4e4e3198789ce952",
+                "0ace050dadde86e6"
+            ]
+        ]
+    },
+    {
+        "id": "8ee109b9d189b618",
+        "type": "change",
+        "z": "69b4362cbb4199e5",
+        "name": "resetleyici",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 180,
+        "y": 980,
+        "wires": [
+            [
+                "3f5f910f0eb6d829",
+                "b823246a51796c47"
+            ]
+        ]
+    },
+    {
+        "id": "4a5ef8767065b1b5",
+        "type": "file",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "filename": "C:\\Users\\Eymen\\süreler_node-red\\working_time.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1190,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19642128fca8ba62",
+        "type": "file",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "filename": "C:\\Users\\Eymen\\süreler_node-red\\stop_time.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1200,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b823246a51796c47",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 5",
+        "func": "// Mevcut süreyi depola\nlet lastDuration = context.get('lastDuration') || null;\n\n// Resetlemeden önceki süreyi başka bir değişkene ata\nlet storedDurationWorking = lastDuration;\n\n// Eğer gelen mesaj reset mesajı ise\nif (msg.topic === 'reset' && msg.payload === true && lastDuration!== null) {\n    \n    flow.set(\"storedDurationWorking\", storedDurationWorking);\n    // Sıfırlamadan önceki süreyi döndür\n    msg.payload = storedDurationWorking;\n    msg.topic = \"WorkingTime\"; // MQTT için konu belirle\n\n    \n\n    // Resetlemek için lastDuration'ı null olarak ayarla\n    context.set('lastDuration', null);\n    return msg;\n} else if (msg.payload && msg.payload !== true){\n    // Eğer reset mesajı değilse, süreyi lastDuration'a kaydet\n    lastDuration = msg.payload;\n    context.set('lastDuration', lastDuration);\n}\n\n// Reset işlemi olmadığı için null döndürerek işlemi durduruyoruz\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 700,
+        "wires": [
+            [
+                "4a5ef8767065b1b5"
+            ]
+        ]
+    },
+    {
+        "id": "0ace050dadde86e6",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 6",
+        "func": "// Mevcut süreyi depola\nlet lastDuration = context.get('lastDuration') || null;\n\n// Resetlemeden önceki süreyi başka bir değişkene ata\nlet storedDurationStopping = lastDuration;\n\n// Eğer gelen mesaj reset mesajı ise\nif (msg.topic === 'reset' && msg.payload === true && lastDuration!== null) {\n    \n    flow.set(\"storedDurationStopping\", storedDurationStopping);\n    // Sıfırlamadan önceki süreyi döndür\n    msg.payload = storedDurationStopping;\n    msg.topic = \"WorkingTime\"; // MQTT için konu belirle\n\n    // storedDurationWorking değişkenini msg nesnesine ekle\n    //msg.storedDurationWorking = storedDurationWorking;\n    \n\n    // Resetlemek için lastDuration'ı null olarak ayarla\n    context.set('lastDuration', null);\n    return msg;\n} else if (msg.payload && msg.payload !== true){\n    // Eğer reset mesajı değilse, süreyi lastDuration'a kaydet\n    lastDuration = msg.payload;\n    context.set('lastDuration', lastDuration);\n}\n\n// Reset işlemi olmadığı için null döndürerek işlemi durduruyoruz\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 860,
+        "wires": [
+            [
+                "19642128fca8ba62"
+            ]
+        ]
+    },
+    {
+        "id": "fef1036fc1b2f089",
+        "type": "mqtt out",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "topic": "workingTime",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7cfca5b9514eb92f",
+        "x": 1310,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "6104c0f0acef8a12",
+        "type": "mqtt out",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "topic": "stoppingTime",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "7cfca5b9514eb92f",
+        "x": 1280,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "abeb30110def52f8",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 7",
+        "func": "// flow'da saklanan storedDuration değerini al\nlet storedDurationWorking = flow.get('storedDurationWorking');\n\n// Eğer storedDuration null değilse, MQTT'ye göndermek için hazırlayın\nif (storedDurationWorking !== null) {\n     // Zaman formatını saat, dakika, saniye olarak ayırıyoruz\n    let timeParts = storedDurationWorking.split(\":\");\n    let hours = parseInt(timeParts[0]);\n    let minutes = parseInt(timeParts[1]);\n    let seconds = parseInt(timeParts[2]);\n\n    // Tüm zamanı saniye cinsine çeviriyoruz\n    let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;\n\n    msg.payload = totalSeconds;\n    msg.topic = \"workingTime\"; // MQTT için konu belirle\n    return msg;\n}\n\n// Eğer storedDuration null ise, işlem yapmadan döndür\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 480,
+        "wires": [
+            [
+                "fef1036fc1b2f089"
+            ]
+        ]
+    },
+    {
+        "id": "1e0060b2240c4348",
+        "type": "inject",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 910,
+        "y": 480,
+        "wires": [
+            [
+                "abeb30110def52f8"
+            ]
+        ]
+    },
+    {
+        "id": "95e8c6bb1c4b6a53",
+        "type": "function",
+        "z": "69b4362cbb4199e5",
+        "name": "function 8",
+        "func": "// flow'da saklanan storedDuration değerini al\nlet storedDurationStopping = flow.get('storedDurationStopping');\n\n// Eğer storedDuration null değilse, MQTT'ye göndermek için hazırlayın\nif (storedDurationStopping !== null) {\n     // Zaman formatını saat, dakika, saniye olarak ayırıyoruz\n    let timeParts = storedDurationStopping.split(\":\");\n    let hours = parseInt(timeParts[0]);\n    let minutes = parseInt(timeParts[1]);\n    let seconds = parseInt(timeParts[2]);\n\n    // Tüm zamanı saniye cinsine çeviriyoruz\n    let totalSeconds = (hours * 3600) + (minutes * 60) + seconds;\n\n    msg.payload = totalSeconds;\n    msg.topic = \"stoppingTime\"; // MQTT için konu belirle\n    return msg;\n}\n\n// Eğer storedDuration null ise, işlem yapmadan döndür\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 1080,
+        "wires": [
+            [
+                "6104c0f0acef8a12"
+            ]
+        ]
+    },
+    {
+        "id": "54ac8fdf686571e9",
+        "type": "inject",
+        "z": "69b4362cbb4199e5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1170,
+        "y": 1080,
+        "wires": [
+            [
+                "95e8c6bb1c4b6a53"
+            ]
+        ]
+    }
+]
